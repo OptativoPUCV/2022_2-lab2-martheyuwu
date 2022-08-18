@@ -65,3 +65,14 @@ list.c:32:9: error: expected identifier or ‘(’ before ‘=’ token
       |         ^
 Compilation failed
 d4b5f3c
+Thu 18 Aug 2022 02:05:56 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:32:11: error: unused variable ‘lista’ [-Werror=unused-variable]
+   32 |     List *lista=NULL;
+      |           ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f8b4318

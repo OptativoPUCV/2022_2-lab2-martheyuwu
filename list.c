@@ -29,7 +29,7 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-    List=NULL;
+    List *lista=NULL;
      return NULL;
 }
 
