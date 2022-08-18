@@ -9,3 +9,16 @@ list.c:32:5: error: ‘lista’ undeclared (first use in this function)
 list.c:32:5: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 a878d49
+Thu 18 Aug 2022 02:02:48 AM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:32:9: error: expected identifier or ‘(’ before ‘->’ token
+   32 |     List->inicio=NULL;
+      |         ^~
+list.c:33:9: error: expected identifier or ‘(’ before ‘>’ token
+   33 |     List>fin=NULL;
+      |         ^
+Compilation failed
+067305d
