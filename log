@@ -102,3 +102,24 @@ Thu 18 Aug 2022 02:07:12 AM UTC:
  tests:  0|6
 total_score: 0/70
 9091822
+Thu 18 Aug 2022 02:11:00 AM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:33:19: error: passing argument 1 of ‘calloc’ makes integer from pointer without a cast [-Werror=int-conversion]
+   33 |     *lista=calloc(lista,sizeof(List));
+      |                   ^~~~~
+      |                   |
+      |                   List * {aka struct List *}
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:542:29: note: expected ‘size_t’ {aka ‘long unsigned int’} but argument is of type ‘List *’ {aka ‘struct List *’}
+  542 | extern void *calloc (size_t __nmemb, size_t __size)
+      |                      ~~~~~~~^~~~~~~
+In file included from test.c:5:
+list.c:33:12: error: incompatible types when assigning to type ‘List’ {aka ‘struct List’} from type ‘void *’
+   33 |     *lista=calloc(lista,sizeof(List));
+      |            ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+86c2bda

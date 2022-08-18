@@ -29,7 +29,8 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-    List *lista=NULL;
+    List *lista;
+    *lista=calloc(lista,sizeof(List));
     return lista;
 }
 
