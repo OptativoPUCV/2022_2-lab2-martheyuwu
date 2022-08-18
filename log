@@ -35,3 +35,13 @@ list.c:33:9: error: expected identifier or ‘(’ before ‘->’ token
       |         ^~
 Compilation failed
 ba57c3b
+Thu 18 Aug 2022 02:04:49 AM UTC: 
+ list.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:32:9: error: expected identifier or ‘(’ before ‘=’ token
+   32 |     List=NULL;
+      |         ^
+Compilation failed
+39b3ec7
