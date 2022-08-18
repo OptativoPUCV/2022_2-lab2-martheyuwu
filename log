@@ -177,3 +177,13 @@ Thu 18 Aug 2022 06:29:01 PM UTC:
  tests:  1|5
 total_score: 10/70
 d991cf7
+Thu 18 Aug 2022 06:32:48 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:40:18: error: incompatible types when assigning to type ‘Node’ from type ‘Node *’
+   40 |   *list->current=cabeza;
+      |                  ^~~~~~
+Compilation failed
+ede54d4
