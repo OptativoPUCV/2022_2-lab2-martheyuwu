@@ -165,3 +165,9 @@ list.c:33:19: error: ‘lista’ is used uninitialized in this function [-Werror
 cc1: all warnings being treated as errors
 Compilation failed
 e8280bf
+Thu 18 Aug 2022 02:15:05 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+15a11b2
