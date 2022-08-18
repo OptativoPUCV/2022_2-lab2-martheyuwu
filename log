@@ -55,3 +55,13 @@ list.c:32:6: error: expected expression before ‘List’
       |      ^~~~
 Compilation failed
 83f1e1e
+Thu 18 Aug 2022 02:05:10 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:32:9: error: expected identifier or ‘(’ before ‘=’ token
+   32 |     List=NULL;
+      |         ^
+Compilation failed
+d4b5f3c
