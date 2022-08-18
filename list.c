@@ -30,7 +30,7 @@ Node * createNode(void * data) {
 
 List * createList() {
     List *lista=NULL;
-     return lista;
+     return *lista;
 }
 
 void * firstList(List * list) {

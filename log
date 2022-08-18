@@ -82,3 +82,17 @@ Thu 18 Aug 2022 02:06:21 AM UTC:
  tests:  0|6
 total_score: 0/70
 9ce95f8
+Thu 18 Aug 2022 02:06:55 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:33:13: error: incompatible types when returning type ‘List’ {aka ‘struct List’} but ‘List *’ {aka ‘struct List *’} was expected
+   33 |      return *lista;
+      |             ^~~~~~
+list.c:34:1: error: control reaches end of non-void function [-Werror=return-type]
+   34 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1e8baf6
