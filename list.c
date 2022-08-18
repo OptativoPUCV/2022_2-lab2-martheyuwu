@@ -31,6 +31,8 @@ Node * createNode(void * data) {
 List * createList() {
     List *lista;
     lista=(List *)calloc(1,sizeof(List));
+    lista->head=NULL;
+    lista->tail=NULL;
     return lista;
 }
 

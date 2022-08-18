@@ -187,3 +187,13 @@ list.c:40:18: error: incompatible types when assigning to type ‘Node’ from t
       |                  ^~~~~~
 Compilation failed
 ede54d4
+Thu 18 Aug 2022 06:50:31 PM UTC: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:18: error: incompatible types when assigning to type ‘Node’ from type ‘Node *’
+   42 |   *list->current=cabeza;
+      |                  ^~~~~~
+Compilation failed
+18e464c
