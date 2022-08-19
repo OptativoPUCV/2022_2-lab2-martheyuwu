@@ -604,3 +604,9 @@ list.c:72:11: error: unused variable ‘nodo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 04d067a
+Fri 19 Aug 2022 05:41:11 PM UTC: 
+ list.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+ tests:  9|3
+total_score: 35/70
+9b8578c
