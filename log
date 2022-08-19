@@ -650,3 +650,13 @@ list.c:78:5: error: ‘else’ without a previous ‘if’
       |     ^~~~
 Compilation failed
 debda92
+Fri 19 Aug 2022 07:42:05 PM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:78:5: error: ‘else’ without a previous ‘if’
+   78 |     else{
+      |     ^~~~
+Compilation failed
+70381a8
