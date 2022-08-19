@@ -468,3 +468,13 @@ list.c:78:10: error: ‘List’ {aka ‘struct List’} has no member named ‘s
       |          ^~
 Compilation failed
 93d073d
+Fri 19 Aug 2022 12:45:39 PM UTC: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:78:10: error: ‘List’ {aka ‘struct List’} has no member named ‘size’
+   78 |      list->size++;
+      |          ^~
+Compilation failed
+4394bbb
