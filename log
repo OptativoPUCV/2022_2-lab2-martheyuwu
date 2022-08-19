@@ -429,3 +429,17 @@ list.c:71:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 e722477
+Fri 19 Aug 2022 12:37:23 PM UTC: 
+ list.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:73:5: error: dereferencing ‘void *’ pointer [-Werror]
+   73 |     *list->head->data=nodo;
+      |     ^~~~~~~~~~~~~~~~~
+list.c:73:22: error: invalid use of void expression
+   73 |     *list->head->data=nodo;
+      |                      ^
+cc1: all warnings being treated as errors
+Compilation failed
+df5a3d7
