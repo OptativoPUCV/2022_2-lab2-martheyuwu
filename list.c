@@ -53,7 +53,11 @@ void * nextList(List * list) {
 }
 
 void * lastList(List * list) {
-    return NULL;
+    while(1){
+      if (!list->current->next)
+        list->current=list->current->next;
+        return list->current->data;
+    }
 }
 
 void * prevList(List * list) {
