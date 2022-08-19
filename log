@@ -640,3 +640,13 @@ Fri 19 Aug 2022 07:22:28 PM UTC:
  tests:  9|3
 total_score: 35/70
 929268a
+Fri 19 Aug 2022 07:41:38 PM UTC: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:78:5: error: ‘else’ without a previous ‘if’
+   78 |     else
+      |     ^~~~
+Compilation failed
+debda92
