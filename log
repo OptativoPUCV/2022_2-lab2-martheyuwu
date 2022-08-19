@@ -672,3 +672,16 @@ Fri 19 Aug 2022 08:32:05 PM UTC:
  tests:  10|2
 total_score: 45/70
 2447a9e
+Fri 19 Aug 2022 08:43:57 PM UTC: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:88:16: error: implicit declaration of function ‘CreateNode’; did you mean ‘createNode’? [-Werror=implicit-function-declaration]
+   88 |     Node *nodo=CreateNode(data);
+      |                ^~~~~~~~~~
+      |                createNode
+list.c:88:16: error: initialization of ‘Node *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+cc1: all warnings being treated as errors
+Compilation failed
+a2cdc01
