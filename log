@@ -703,3 +703,9 @@ list.c:90:16: error: ‘lista’ undeclared (first use in this function); did yo
 list.c:90:16: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 293863a
+Fri 19 Aug 2022 08:44:50 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|2
+total_score: 45/70
+4f63ef7
