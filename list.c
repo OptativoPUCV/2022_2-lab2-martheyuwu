@@ -96,7 +96,6 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    Node *current=list->current;
 }
 
 void cleanList(List * list) {
