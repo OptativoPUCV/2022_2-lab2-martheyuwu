@@ -60,7 +60,7 @@ void * lastList(List * list) {
 }
 
 void * prevList(List * list) {
-    if (!list->head)
+    if (!list->current)
       return NULL;
     if (!list->current->prev)
       return NULL;
