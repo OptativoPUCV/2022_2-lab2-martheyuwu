@@ -60,13 +60,14 @@ void * lastList(List * list) {
 }
 
 void * prevList(List * list) {
-    if (!list->current)
+    if (!list->current->prev)
       return NULL;
     list->current=list->current->prev;
     return list->current->data;
 }
 
 void pushFront(List * list, void * data) {
+  
 }
 
 void pushBack(List * list, void * data) {
