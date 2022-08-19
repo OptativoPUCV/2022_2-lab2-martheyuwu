@@ -410,3 +410,8 @@ list.c:73:22: error: incompatible types when assigning to type ‘void *’ from
       |                      ^~~~
 Compilation failed
 d14cc77
+Fri 19 Aug 2022 12:36:01 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+432bfcf
