@@ -660,3 +660,9 @@ list.c:78:5: error: ‘else’ without a previous ‘if’
       |     ^~~~
 Compilation failed
 70381a8
+Fri 19 Aug 2022 07:43:16 PM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+464ab1f
