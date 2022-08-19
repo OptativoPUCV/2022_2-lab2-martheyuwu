@@ -483,3 +483,17 @@ Fri 19 Aug 2022 01:07:07 PM UTC:
  1 file changed, 7 insertions(+), 4 deletions(-)
  tests:  0|0
 68a7ce5
+Fri 19 Aug 2022 01:07:53 PM UTC: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:73:14: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   73 |       return NULL;
+      |              ^~~~
+list.c:71:6: note: declared here
+   71 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7c47ace
