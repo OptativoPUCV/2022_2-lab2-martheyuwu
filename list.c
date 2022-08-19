@@ -70,14 +70,13 @@ void * prevList(List * list) {
 
 void pushFront(List * list, void * data) {
     Node *nodo=createNode(data);
-    list->head->data=nodo;
     nodo->next=list->head;
      if(list->head)
        list->head->prev=nodo;
      list->head=nodo;
      nodo->prev=NULL;
      list->size++;
-
+    list->head->data=nodo;
 }
 
 void pushBack(List * list, void * data) {
