@@ -287,3 +287,17 @@ list.c:59:9: note: ...this statement, but the latter is misleadingly indented as
 cc1: all warnings being treated as errors
 Compilation failed
 b5cb08c
+Fri 19 Aug 2022 02:06:37 AM UTC: 
+ list.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:58:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   58 |       if (!list->current && i==0)
+      |       ^~
+list.c:60:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   60 |         return NULL;
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+14eb887

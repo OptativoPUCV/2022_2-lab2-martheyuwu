@@ -53,10 +53,16 @@ void * nextList(List * list) {
 }
 
 void * lastList(List * list) {
+    int i=0;
     while(1){
-      if (!list->current->next)
+      if (!list->current && i==0)
+        i++;
+        return NULL;
+      if (!list->current->next){
         list->current=list->current->next;
         return list->current->data;
+        
+      }
     }
 }
 
