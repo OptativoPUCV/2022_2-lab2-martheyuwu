@@ -95,8 +95,8 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {}
-    return NULL;
+void * popCurrent(List * list) {
+    Node *current=list->current;
 }
 
 void cleanList(List * list) {
