@@ -397,3 +397,16 @@ list.c:72:10: error: unused variable ‘nodo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 09241ca
+Fri 19 Aug 2022 12:35:33 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:72:15: error: invalid initializer
+   72 |     Node nodo=createNode(data);
+      |               ^~~~~~~~~~
+list.c:73:22: error: incompatible types when assigning to type ‘void *’ from type ‘Node’
+   73 |     list->head->data=nodo;
+      |                      ^~~~
+Compilation failed
+d14cc77
