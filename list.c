@@ -113,10 +113,7 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    Node *current=list->head;
-    list->current=current->next;
-    current->next=NULL;
-    return current;
+    return NULL;
 }
 
 void cleanList(List * list) {
