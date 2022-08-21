@@ -1401,3 +1401,14 @@ list.c:116:11: error: unused variable ‘curr’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 90a8cac
+Sun 21 Aug 2022 11:03:36 PM UTC: 
+ list.c | 3 ---
+ 1 file changed, 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:127:11: error: ‘next’ undeclared (first use in this function)
+  127 |       if (next)
+      |           ^~~~
+list.c:127:11: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+f4ec2b8
