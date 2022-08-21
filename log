@@ -1417,3 +1417,27 @@ Sun 21 Aug 2022 11:03:50 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 a116648
+Sun 21 Aug 2022 11:04:53 PM UTC: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+test.c: In function ‘popCurrent’:
+test.c:448:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:468:1: error: expected declaration or statement at end of input
+  468 | }
+      | ^
+test.c:468: error: control reaches end of non-void function [-Werror=return-type]
+  468 | }
+      | 
+At top level:
+test.c:448:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+In file included from test.c:5:
+list.c:134:6: error: ‘cleanList’ defined but not used [-Werror=unused-function]
+  134 | void cleanList(List * list) {
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a763e3a
