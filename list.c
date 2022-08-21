@@ -112,19 +112,22 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
-    void *data=list->current->data;
+void * popCurrent(List * list) { 
+    Node *curr = list->current;  
+    Node *last = list->current->prev;     
+    Node *next = list->current->next;     
+    void *data = list->current->data;
     if (list->current == list->head) {
-      list->current = current->next;
-      list->head = current->next;      
+      list->current = list->current->next;
+      list->head = list->current->next;      
       list->current->prev = NULL; 
     }
     else {
       list->current = list->current->next;
-      if (list->current->next) 
-        list->current->next->prev = list->current->prev;  
+      if (next) 
+        next->prev = last;  
     }
-    free(list->current);
+    free(curr);
     return data;
 }
 
