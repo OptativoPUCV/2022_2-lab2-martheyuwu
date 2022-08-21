@@ -114,7 +114,7 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
     Node *nodo=list->head;
-    return 0;
+    return nodo;
 }
 
 void cleanList(List * list) {
