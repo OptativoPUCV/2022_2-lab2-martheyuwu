@@ -1121,3 +1121,14 @@ list.c:122:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 3bdc396
+Sun 21 Aug 2022 09:02:37 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:117:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  117 |     if (list->current=list->head){
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d6ec373

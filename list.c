@@ -117,8 +117,8 @@ void * popCurrent(List * list) {
     if (list->current=list->head){
       list->head=list->head->next;
       free(nodo);
-      return 0;
     }
+    return 0;
 }
 
 void cleanList(List * list) {
