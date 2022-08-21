@@ -1219,3 +1219,20 @@ list.c:125:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 7df333f
+Sun 21 Aug 2022 09:18:34 PM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:122:23: error: expected ‘;’ before ‘return’
+  122 |       free(nodo->next)
+      |                       ^
+      |                       ;
+  123 |       return 0;
+      |       ~~~~~~           
+list.c:126:1: error: control reaches end of non-void function [-Werror=return-type]
+  126 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+be1d200
