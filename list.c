@@ -118,8 +118,8 @@ void * popCurrent(List * list) {
       nodo->prev->next=nodo->next;
       nodo->next->prev=nodo->prev;
       free(nodo);
-      return 0;
     }
+    return 0;
 }
 
 void cleanList(List * list) {
