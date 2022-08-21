@@ -1412,3 +1412,8 @@ list.c:127:11: error: ‘next’ undeclared (first use in this function)
 list.c:127:11: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 f4ec2b8
+Sun 21 Aug 2022 11:03:50 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+a116648
