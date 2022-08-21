@@ -114,8 +114,8 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
     Node *nodo=list->head;
-    while(nodo->next!=list->current)
-      nodo=nodo->next;
+    list->head=list->head->next;
+    free(nodo);
     return 0;
 }
 
