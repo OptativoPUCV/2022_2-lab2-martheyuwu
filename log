@@ -1185,3 +1185,9 @@ list.c:117:9: error: suggest parentheses around assignment used as truth value [
 cc1: all warnings being treated as errors
 Compilation failed
 5f5b146
+Sun 21 Aug 2022 09:11:48 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 55/70
+22d5d0b
