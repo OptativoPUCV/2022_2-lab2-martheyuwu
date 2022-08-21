@@ -117,7 +117,7 @@ void * popCurrent(List * list) {
     while(nodo->next!=list->current)
       nodo=nodo->next;
     nodo->next=list->current->next;
-    free(list->current)
+    free(list->current);
 }
 
 void cleanList(List * list) {
