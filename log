@@ -1138,3 +1138,17 @@ Sun 21 Aug 2022 09:05:00 PM UTC:
  tests:  11|1
 total_score: 55/70
 8b20a23
+Sun 21 Aug 2022 09:09:27 PM UTC: 
+ list.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:117:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  117 |     if (nodo->next=list->current){
+      |         ^~~~
+list.c:123:1: error: control reaches end of non-void function [-Werror=return-type]
+  123 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+95ff058
