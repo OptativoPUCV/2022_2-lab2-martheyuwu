@@ -1441,3 +1441,8 @@ list.c:134:6: error: ‘cleanList’ defined but not used [-Werror=unused-functi
 cc1: all warnings being treated as errors
 Compilation failed
 a763e3a
+Sun 21 Aug 2022 11:05:50 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  0|0
+c98b761
