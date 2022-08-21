@@ -134,9 +134,10 @@ void * popCurrent(List * list) {
       }
       free(curr);
       return data;
-    }
-    else
+  }
+    else{
       return NULL;
+    }
 }
 
 void cleanList(List * list) {
