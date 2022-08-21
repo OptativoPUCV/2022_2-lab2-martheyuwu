@@ -119,7 +119,7 @@ void * popCurrent(List * list) {
     else{
       while (nodo->next!=list->current)
         nodo=nodo->next;
-      free(nodo->next)
+      free(nodo->next);
       return 0;
     }
 }
