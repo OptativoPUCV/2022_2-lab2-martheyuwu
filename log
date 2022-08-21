@@ -1292,3 +1292,15 @@ Sun 21 Aug 2022 09:39:23 PM UTC:
  tests:  11|1
 total_score: 55/70
 2036daf
+Sun 21 Aug 2022 09:44:48 PM UTC: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:119:18: error: ‘current’ undeclared (first use in this function); did you mean ‘curr’?
+  119 |     Node *last = current->prev;
+      |                  ^~~~~~~
+      |                  curr
+list.c:119:18: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+18040a2
