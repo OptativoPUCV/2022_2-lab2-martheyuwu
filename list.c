@@ -117,7 +117,8 @@ void * popCurrent(List * list) {
     while(nodo->next!=list->current)
       nodo=nodo->next;
     Node *n=list->current->data;
-    free(nodo->next);
+    nodo->next=list->current->next;
+    free(list->current);
     list->current=list->current->next;
     return n;
 }
