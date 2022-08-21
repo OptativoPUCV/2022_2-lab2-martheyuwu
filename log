@@ -1090,3 +1090,20 @@ Sun 21 Aug 2022 08:58:18 PM UTC:
  tests:  11|1
 total_score: 55/70
 73bce7f
+Sun 21 Aug 2022 09:01:43 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:117:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  117 |     if (list->current=list->head)
+      |         ^~~~
+list.c:117:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  117 |     if (list->current=list->head)
+      |     ^~
+list.c:119:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  119 |       free(nodo);
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8776f78
