@@ -1831,3 +1831,9 @@ list.c:116:11: error: unused variable ‘borrar’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 63be958
+Mon 22 Aug 2022 03:18:42 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|0
+total_score: 70/70
+0a417c9
