@@ -113,6 +113,7 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list){ 
+    void *data=list->current->data;
     if (list->current){
 
       return data;
