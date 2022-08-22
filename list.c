@@ -129,9 +129,11 @@ void * popCurrent(List * list){
         list->tail=last;      
       }
       else {
+        list->current->next=list->current->next->next;
+        list->current->prev->next=list->current->next;
         list->current=list->current->next;
-        list->current->prev=curr;
-        free(list->current->prev);
+        free(curr);
+        
       }
       return data;
     }
