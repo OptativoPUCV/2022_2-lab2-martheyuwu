@@ -1820,3 +1820,14 @@ Mon 22 Aug 2022 03:15:17 AM UTC:
  tests:  12|0
 total_score: 70/70
 c2de1f7
+Mon 22 Aug 2022 03:18:35 AM UTC: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:116:11: error: unused variable ‘borrar’ [-Werror=unused-variable]
+  116 |     void *borrar=list->current;
+      |           ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+63be958
