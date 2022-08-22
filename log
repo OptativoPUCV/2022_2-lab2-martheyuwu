@@ -1653,3 +1653,20 @@ list.c:141:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 78250d8
+Mon 22 Aug 2022 02:37:26 AM UTC: 
+ list.c | 20 +-------------------
+ 1 file changed, 1 insertion(+), 19 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:117:11: error: unused variable ‘last’ [-Werror=unused-variable]
+  117 |     Node *last=list->current->prev;
+      |           ^~~~
+list.c:116:11: error: unused variable ‘curr’ [-Werror=unused-variable]
+  116 |     Node *curr=list->current;
+      |           ^~~~
+list.c:123:1: error: control reaches end of non-void function [-Werror=return-type]
+  123 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+169b4b1
